@@ -1,0 +1,1 @@
+const themeBtn=document.getElementById("themeBtn");function setTheme(t){document.documentElement.dataset.theme=t;localStorage.setItem("qr_theme",t);if(themeBtn)themeBtn.textContent=t==="dark"?"☀️ Aydınlık":"🌙 Karanlık";}setTheme(localStorage.getItem("qr_theme")||"dark");if(themeBtn)themeBtn.onclick=()=>setTheme(document.documentElement.dataset.theme==="dark"?"light":"dark");
